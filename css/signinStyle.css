@@ -1,0 +1,149 @@
+/*Whole page css*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+/*Background css*/
+.background {
+  background-image: url(../images/signbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 100vw;
+  background-position: center center;
+  height: 100vh;
+}
+/*Navigation bar css*/
+.navbar {
+  width: 100%;
+  height: 200px;
+}
+/*Logo css*/
+#logo {
+  width: 152px;
+  height: 200px;
+  background-image: url(../images/logo.png);
+  float: left;
+  margin-top: -25px;
+}
+/*Navigation links css*/
+#navigation {
+  margin: 0 auto;
+  display: table;
+  margin-top: 55px;
+}
+#navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 300;
+  margin-right: 70px;
+}
+#navigation a:hover {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+#navigation a:hover::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+/*Right navigation css*/
+.sign-in {
+  margin-top: 100px;
+  margin-left: -25px;
+  text-align: center;
+}
+.sign-in h2 {
+  color: #F6482B;
+  margin-top: -10px;
+  margin-left: -120px;
+  font-size: 26;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/*User data input field css*/
+:placeholder {
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-size: 18px;
+  font-weight: 300;
+  border-bottom: 1px solid grey;
+}
+form input {
+  border: none;
+  background-color: transparent;
+}
+/*Sign in button css*/
+input[type="submit"] {
+  margin: 0 auto;
+  display: table;
+  background-color: #ff2400;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 35px;
+  width: 200px;
+  padding: 5 0 5 0;
+  margin-top: 15px;
+  transition: all .5s ease-in-out;
+}
+input:hover[type="submit"] {
+  transition: all .5s ease-in-out;
+  background: #b91a01;
+  width: 190px;
+}
+/*No-account css*/
+.no-account p, .no-account a, .existing p, .existing a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top:10px;
+}
+input[type="text"], input[type="password"] {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+/*Footer css*/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+}
+/*Show errors*/
+#alert {
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #ff2400;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 175px;
+  margin-left: 790px;
+}
+/*button to show password*/
+#showPass {
+  margin-top: 10px;
+}

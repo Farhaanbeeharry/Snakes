@@ -1,0 +1,144 @@
+/*Whole page css*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+/*Background css*/
+.background {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 100vw;
+  background-position: center center;
+  height: 100vh;
+}
+/*Navigation bar css*/
+.navbar {
+  width: 100%;
+  height: 200px;
+}
+/*Logo css*/
+#logo {
+  width: 152px;
+  height: 200px;
+  background-image: url(../images/logo.png);
+  float: left;
+  margin-top: -25px;
+}
+/*Navigation links css*/
+#navigation {
+  margin: 0 auto;
+  display: table;
+  margin-top: 55px;
+}
+#navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 300;
+  margin-right: 70px;
+}
+#navigation a:hover {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+#navigation a:hover::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+/*Right navigation css*/
+#sign-in {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: -115px;
+}
+#sign-in .text a {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 15px;
+}
+#sign-in a:hover {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+#sign-in a:hover::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+/*Game window css*/
+#gameCanvas {
+  cursor: none;
+  border: 1px solid #9D9969;
+  background-color: #2a2a2abe;
+  margin-left: calc(50% - 300px);
+  margin-top: -90px;
+}
+/*The score of the game appears as below*/
+#scoreboard {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: right;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 300;
+  margin-top: -530px;
+  margin-right: 130px;
+}
+/*Warnings about next level position*/
+#message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 310px;
+}
+/*Game over messasge appears in this position*/
+#gameOverMessage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  text-align: left;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 130px;
+  margin-left: 300px;
+}
+/*Footer css*/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.726);
+  text-align: center;
+}
